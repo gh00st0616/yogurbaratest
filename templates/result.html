@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요거바라 월드컵 결과</title>
+</head>
+<body>
+    <h1>요거바라 월드컵 결과</h1>
+    <p>요거바라 원픽은:</p>
+    <img src="{{ url_for('static', filename='images/' ~ winner) }}" alt="{{ winner }}" width="200">
+    <p>{{ winner }}</p>
+    <a href="{{ url_for('index') }}">처음으로</a>
+</body>
+</html>
